@@ -23,7 +23,7 @@ aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://civitai.com/api/do
 aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://civitai.com/api/download/models/44756 -d /stable-diffusion-webui/extensions/sd-webui-controlnet/models -o control_v11p_sd15_softedge_fp16.safetensors && \
 aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://civitai.com/api/download/models/67566 -d /stable-diffusion-webui/extensions/sd-webui-controlnet/models -o control_v11f1e_sd15_tile_fp16.safetensors
 
-wget -O /stable-diffusion-webui/models/SAM/mobile_sam(vit_t).pt https://github.com/ChaoningZhang/MobileSAM/raw/master/weights/mobile_sam.pt
+wget -O "/stable-diffusion-webui/models/SAM/mobile_sam(vit_t).pt" https://github.com/ChaoningZhang/MobileSAM/raw/master/weights/mobile_sam.pt
 export MAX_MEMORY_CAPACITY=30
 
 cd /stable-diffusion-webui
